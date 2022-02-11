@@ -30,6 +30,8 @@
     <string name="coursedetails_fragment_label">Course Details</string>
     <string name="coursedetails">Course Details</string>
 
+    <string name="coursenotes">Course Notes</string>
+
     <string name="welcome">Welcome to the WGU app!</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 

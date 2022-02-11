@@ -128,5 +128,20 @@
         <action
             android:id="@+id/action_courseDetailsFragment_to_HomeFragment"
             app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_courseDetailsFragment_to_courseNotesFragment"
+            app:destination="@id/courseNotesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseNotesFragment"
+        android:name="com.example.android.c196projectv3.CourseNotesFragment"
+        android:label="@string/coursenotes"
+        tools:layout="@layout/fragment_course_notes" >
+        <action
+            android:id="@+id/action_courseNotesFragment_to_courseDetailsFragment"
+            app:destination="@id/courseDetailsFragment" />
+        <action
+            android:id="@+id/action_courseNotesFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
     </fragment>
 </navigation>
