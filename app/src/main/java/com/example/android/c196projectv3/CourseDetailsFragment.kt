@@ -1,30 +1,31 @@
 package com.example.android.c196projectv3
 
+import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.android.c196projectv3.databinding.FragmentCourseBinding
+import com.example.android.c196projectv3.databinding.FragmentCourseDetailsBinding
 
-class CourseListFragment : Fragment() {
+class CourseDetailsFragment : Fragment() {
 
-    private var _binding: FragmentCourseBinding? = null
+    private var _binding: FragmentCourseDetailsBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
 
     companion object {
-        fun newInstance() = CourseListFragment()
+        fun newInstance() = CourseDetailsFragment()
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentCourseBinding.inflate(inflater, container, false)
+        _binding = FragmentCourseDetailsBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -32,13 +33,10 @@ class CourseListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonHome.setOnClickListener {
-            findNavController().navigate(R.id.action_CourseListFragment_to_HomeFragment)
+            findNavController().navigate(R.id.action_courseDetailsFragment_to_HomeFragment)
         }
-        binding.buttonCourseEditor.setOnClickListener {
-            findNavController().navigate(R.id.action_CourseListFragment_to_CourseEditorFragment)
-        }
-        binding.buttonCourseDetails.setOnClickListener {
-            findNavController().navigate(R.id.action_CourseFragment_to_courseDetailsFragment)
+        binding.courselist.setOnClickListener {
+            findNavController().navigate(R.id.action_courseDetailsFragment_to_CourseFragment)
         }
     }
 

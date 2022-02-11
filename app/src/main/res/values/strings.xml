@@ -27,6 +27,9 @@
     <string name="courseeditor_fragment_label">Course Editor</string>
     <string name="courseeditor">Course Editor</string>
 
+    <string name="coursedetails_fragment_label">Course Details</string>
+    <string name="coursedetails">Course Details</string>
+
     <string name="welcome">Welcome to the WGU app!</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
