@@ -3,13 +3,17 @@
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="home_fragment_label">WGU</string>
+
     <string name="termlist_fragment_label">Term List</string>
     <string name="term">Term List</string>
+
     <string name="courselist_fragment_label">Course List</string>
     <string name="course">Course List</string>
+
+    <string name="home">Home</string>
+
     <string name="assessmentlist_fragment_label">Assessment List</string>
     <string name="assessment">Assessment List</string>
-    <string name="home">Home</string>
 
     <string name="term_editor_fragment_label">Term Editor</string>
     <string name="termeditor">Term Editor</string>
@@ -19,6 +23,9 @@
 
     <string name="assessmenteditor_fragment_label">Assessment Editor</string>
     <string name="assessmenteditor">Assessment Editor</string>
+
+    <string name="courseeditor_fragment_label">Course Editor</string>
+    <string name="courseeditor">Course Editor</string>
 
     <string name="welcome">Welcome to the WGU app!</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>

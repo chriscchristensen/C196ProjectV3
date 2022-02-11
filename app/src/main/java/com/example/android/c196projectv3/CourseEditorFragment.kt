@@ -6,25 +6,26 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.android.c196projectv3.databinding.FragmentCourseBinding
+import com.example.android.c196projectv3.databinding.FragmentCourseEditorBinding
 
-class CourseListFragment : Fragment() {
+class CourseEditorFragment : Fragment() {
 
-    private var _binding: FragmentCourseBinding? = null
+    private var _binding: FragmentCourseEditorBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
 
     companion object {
-        fun newInstance() = CourseListFragment()
+        fun newInstance() = CourseEditorFragment()
     }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentCourseBinding.inflate(inflater, container, false)
+        _binding = FragmentCourseEditorBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -32,10 +33,10 @@ class CourseListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonHome.setOnClickListener {
-            findNavController().navigate(R.id.action_CourseListFragment_to_HomeFragment)
+            findNavController().navigate(R.id.action_courseEditorFragment_to_HomeFragment)
         }
-        binding.buttonCourseEditor.setOnClickListener {
-            findNavController().navigate(R.id.action_CourseListFragment_to_CourseEditorFragment)
+        binding.courselist.setOnClickListener {
+            findNavController().navigate(R.id.action_courseEditorFragment_to_CourseFragment)
         }
     }
 

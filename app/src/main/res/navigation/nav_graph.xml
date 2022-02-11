@@ -38,16 +38,6 @@
             app:destination="@id/TermDetailsFragment" />
     </fragment>
     <fragment
-        android:id="@+id/CourseFragment"
-        android:name="com.example.android.c196projectv3.CourseListFragment"
-        android:label="@string/courselist_fragment_label"
-        tools:layout="@layout/fragment_course">
-
-        <action
-            android:id="@+id/action_CourseListFragment_to_HomeFragment"
-            app:destination="@id/HomeFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/AssessmentFragment"
         android:name="com.example.android.c196projectv3.AssessmentFragment"
         android:label="@string/assessmentlist_fragment_label"
@@ -97,6 +87,31 @@
             app:destination="@id/TermFragment" />
         <action
             android:id="@+id/action_TermDetailsFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CourseFragment"
+        android:name="com.example.android.c196projectv3.CourseListFragment"
+        android:label="@string/courselist_fragment_label"
+        tools:layout="@layout/fragment_course">
+
+        <action
+            android:id="@+id/action_CourseListFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_CourseListFragment_to_CourseEditorFragment"
+            app:destination="@id/courseEditorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseEditorFragment"
+        android:name="com.example.android.c196projectv3.CourseEditorFragment"
+        android:label="@string/courseeditor_fragment_label"
+        tools:layout="@layout/fragment_course_editor" >
+        <action
+            android:id="@+id/action_courseEditorFragment_to_CourseFragment"
+            app:destination="@id/CourseFragment" />
+        <action
+            android:id="@+id/action_courseEditorFragment_to_HomeFragment"
             app:destination="@id/HomeFragment" />
     </fragment>
 </navigation>
