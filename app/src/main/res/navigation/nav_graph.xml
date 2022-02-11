@@ -116,6 +116,9 @@
         <action
             android:id="@+id/action_courseEditorFragment_to_HomeFragment"
             app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_courseEditorFragment_to_courseNotesEditorFragment"
+            app:destination="@id/courseNotesEditorFragment" />
     </fragment>
     <fragment
         android:id="@+id/courseDetailsFragment"
@@ -131,6 +134,9 @@
         <action
             android:id="@+id/action_courseDetailsFragment_to_courseNotesFragment"
             app:destination="@id/courseNotesFragment" />
+        <action
+            android:id="@+id/action_courseDetailsFragment_to_courseNotesEditorFragment"
+            app:destination="@id/courseNotesEditorFragment" />
     </fragment>
     <fragment
         android:id="@+id/courseNotesFragment"
@@ -143,5 +149,23 @@
         <action
             android:id="@+id/action_courseNotesFragment_to_HomeFragment"
             app:destination="@id/HomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseNotesEditorFragment"
+        android:name="com.example.android.c196projectv3.CourseNotesEditorFragment"
+        android:label="@string/coursenoteseditor"
+        tools:layout="@layout/fragment_course_notes_editor" >
+        <action
+            android:id="@+id/action_courseNotesEditorFragment_to_courseDetailsFragment"
+            app:destination="@id/courseDetailsFragment" />
+        <action
+            android:id="@+id/action_courseNotesEditorFragment_to_courseEditorFragment"
+            app:destination="@id/courseEditorFragment" />
+        <action
+            android:id="@+id/action_courseNotesEditorFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_courseNotesEditorFragment_to_courseNotesFragment"
+            app:destination="@id/courseNotesFragment" />
     </fragment>
 </navigation>

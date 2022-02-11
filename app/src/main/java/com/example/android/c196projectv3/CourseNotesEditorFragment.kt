@@ -7,25 +7,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.android.c196projectv3.databinding.FragmentCourseDetailsBinding
+import com.example.android.c196projectv3.databinding.FragmentCourseNotesEditorBinding
 
-class CourseDetailsFragment : Fragment() {
+class CourseNotesEditorFragment : Fragment() {
 
-    private var _binding: FragmentCourseDetailsBinding? = null
+    private var _binding: FragmentCourseNotesEditorBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
 
     companion object {
-        fun newInstance() = CourseDetailsFragment()
+        fun newInstance() = CourseNotesEditorFragment()
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentCourseDetailsBinding.inflate(inflater, container, false)
+        _binding = FragmentCourseNotesEditorBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -33,16 +33,16 @@ class CourseDetailsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonHome.setOnClickListener {
-            findNavController().navigate(R.id.action_courseDetailsFragment_to_HomeFragment)
+            findNavController().navigate(R.id.action_courseNotesEditorFragment_to_HomeFragment)
         }
-        binding.courselist.setOnClickListener {
-            findNavController().navigate(R.id.action_courseDetailsFragment_to_CourseFragment)
+        binding.courseeditor.setOnClickListener {
+            findNavController().navigate(R.id.action_courseNotesEditorFragment_to_courseEditorFragment)
         }
         binding.coursenotes.setOnClickListener {
-            findNavController().navigate(R.id.action_courseDetailsFragment_to_courseNotesFragment)
+            findNavController().navigate(R.id.action_courseNotesEditorFragment_to_courseNotesFragment)
         }
-        binding.coursenoteseditor.setOnClickListener {
-            findNavController().navigate(R.id.action_courseDetailsFragment_to_courseNotesEditorFragment)
+        binding.coursedetails.setOnClickListener {
+            findNavController().navigate(R.id.action_courseNotesEditorFragment_to_courseDetailsFragment)
         }
     }
 
@@ -50,5 +50,4 @@ class CourseDetailsFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 }

@@ -50,4 +50,16 @@
         app:layout_constraintTop_toBottomOf="@id/textview_coursedetails"
         app:layout_constraintVertical_bias="0.811" />
 
+    <Button
+        android:id="@+id/coursenoteseditor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coursenoteseditor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_coursedetails"
+        app:layout_constraintVertical_bias="0.811" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
