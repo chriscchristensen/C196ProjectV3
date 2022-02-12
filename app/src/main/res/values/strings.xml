@@ -35,6 +35,12 @@
 
     <string name="coursenoteseditor">Course Notes Editor</string>
 
+    <string name="savebutton">Save</string>
+    <string name="deletebutton">Delete</string>
+
+    <string name="mentoreditor_fragment_label">Mentor Editor</string>
+    <string name="mentor">Mentor Editor</string>
+
     <string name="welcome">Welcome to the WGU app!</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 

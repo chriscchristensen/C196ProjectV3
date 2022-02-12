@@ -44,6 +44,9 @@ class CourseDetailsFragment : Fragment() {
         binding.coursenoteseditor.setOnClickListener {
             findNavController().navigate(R.id.action_courseDetailsFragment_to_courseNotesEditorFragment)
         }
+        binding.coursementoreditor.setOnClickListener {
+            findNavController().navigate(R.id.action_courseDetailsFragment_to_mentorEditorFragment)
+        }
     }
 
     override fun onDestroyView() {

@@ -137,6 +137,9 @@
         <action
             android:id="@+id/action_courseDetailsFragment_to_courseNotesEditorFragment"
             app:destination="@id/courseNotesEditorFragment" />
+        <action
+            android:id="@+id/action_courseDetailsFragment_to_mentorEditorFragment"
+            app:destination="@id/mentorEditorFragment" />
     </fragment>
     <fragment
         android:id="@+id/courseNotesFragment"
@@ -167,5 +170,17 @@
         <action
             android:id="@+id/action_courseNotesEditorFragment_to_courseNotesFragment"
             app:destination="@id/courseNotesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentorEditorFragment"
+        android:name="com.example.android.c196projectv3.MentorEditorFragment"
+        android:label="@string/mentoreditor_fragment_label"
+        tools:layout="@layout/fragment_mentor_editor" >
+        <action
+            android:id="@+id/action_mentorEditorFragment_to_courseDetailsFragment"
+            app:destination="@id/courseDetailsFragment" />
+        <action
+            android:id="@+id/action_mentorEditorFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
     </fragment>
 </navigation>
